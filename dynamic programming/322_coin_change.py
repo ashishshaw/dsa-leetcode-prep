@@ -18,3 +18,4 @@ class Solution:
                     dp[i] = min(dp[i], 1+dp[i-coin])
 
         return dp[amount] if dp[amount] != math.inf else -1
+    
