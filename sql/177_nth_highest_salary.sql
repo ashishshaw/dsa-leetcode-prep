@@ -7,3 +7,8 @@ FROM (
         FROM Employee e
     ) s
 WHERE s.rank = N
+
+SELECT DISTINCT salary
+FROM Employee
+ORDER BY salary DESC
+LIMIT 1 OFFSET N-1;
