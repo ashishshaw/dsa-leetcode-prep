@@ -3,6 +3,9 @@
 #updating the counter for the window and comparing it to the counter for p. 
 #If they are equal, we add the starting index of the window to the answer list. Finally, we return the answer list.
 
+# Input: s = "cbaebabacd", p = "abc"
+# Output: [0,6]
+
 from collections import Counter
 from typing import List
 
@@ -20,6 +23,7 @@ class Solution:
             ans.append(0)
 
         for i in range(len(p), len(s)):
+            #Add a new character to the window and remove the leftmost character from the window
             window[s[i]] += 1
             window[s[i-len(p)]] -= 1
 
