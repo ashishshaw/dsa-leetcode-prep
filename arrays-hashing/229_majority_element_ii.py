@@ -1,5 +1,11 @@
 #Store the count of each number in a hashmap and check if the count is greater than n/3
 
+# Input: nums = [3,2,3]
+# Output: [3]
+
+# Input: nums = [1,2]
+# Output: [1,2]
+
 class Solution:
     def majorityElement(self, nums: List[int]) -> List[int]:
         threshold = len(nums) // 3
