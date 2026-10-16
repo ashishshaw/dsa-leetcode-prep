@@ -1,3 +1,15 @@
+#Approach: First, we use two pointers to traverse the array from both ends. 
+#We keep track of the maximum height seen so far from both sides. 
+#At each step, we move the pointer with the smaller height and update the water trapped based on the difference 
+#between the current height and the maximum height seen so far.
+
+#                                |"""|                    
+#                                |___|                    
+#            |"""|~~~~~~~~~~~~~~~|"""||"""|~~~~~|"""|     
+#            |___|               |___||___|     |___|     
+#  |"""|~~~~~|"""||"""|~~~~~|"""||"""||"""||"""||"""||"""|
+#  |___|     |___||___|     |___||___||___||___||___||___|
+
 class Solution:
     def trap(self, height: List[int]) -> int:
         left = 0
