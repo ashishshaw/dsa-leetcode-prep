@@ -1,5 +1,6 @@
-#Rooms not required if current start >= end 
-
+#Approach: Use a min-heap to keep track of the end times of meetings.
+#For each meeting, if its start time is after the earliest end time, we can reuse that room.
+#Otherwise, we need a new room.
 
 from collections import Counter
 import heapq
