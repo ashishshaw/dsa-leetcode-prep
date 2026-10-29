@@ -1,5 +1,9 @@
 #Approach: Use a sliding window technique to find the minimum length of a contiguous subarray whose sum is greater than or equal to the target.
 
+# Input: target = 7, nums = [2,3,1,2,4,3]
+# Output: 2
+# Explanation: The subarray [4,3] has the minimal length under the problem constraint.
+
 class Solution:
     def minSubArrayLen(self, target: int, nums: List[int]) -> int:
         left = 0
