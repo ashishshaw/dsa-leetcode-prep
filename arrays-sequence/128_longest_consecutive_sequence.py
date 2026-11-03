@@ -2,6 +2,10 @@
 #Seemple: [100, 4, 200, 1, 3, 2] -> 1 is the start of a sequence, check for 2, then 3, then 4. The length of the sequence is 4.
 #See if num - 1 is in the set, if not, then it is the start of a sequence. Then check for num + 1, num + 2, etc. until the next number is not in the set. Keep track of the length of the sequence and update the result if it is greater than the previous result.
 
+# Input: nums = [100,4,200,1,3,2]
+# Output: 4
+# The longest consecutive elements sequence is [1, 2, 3, 4]. Therefore its length is 4.
+
 class Solution:
     def longestConsecutive(self, nums: List[int]) -> int:
         nums = set(nums)
